@@ -10,4 +10,5 @@ report_file="/proj/applied_bioinformatics/users/x_libja/MedBioinfo/analyses/krak
 output_file="/proj/applied_bioinformatics/users/x_libja/MedBioinfo/analyses/kraken/Onesample_kraken2.txt"
 sing_image="/proj/applied_bioinformatics/common_data/kraken2.sif"
 
-singularity exec -B /proj:/proj $sing_image kraken2 --db /proj/applied_bioinformatics/common_data/kraken_database/ --threads 1 --paired --output $output_file --report $report_file --use-mpa-style $file"_1.fastq.gz"  $file"_2.fastq.gz"
+singularity exec -B /proj:/proj $sing_image kraken2 --db /proj/applied_bioinformatics/common_data/kraken_database/ --threads 1 --paired --output $output_file --report $report_file $file"_1.fastq.gz"  $file"_2.fastq.gz"
+#--use-mpa-style flag for report readability but will not work with kracken
