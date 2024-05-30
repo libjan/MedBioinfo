@@ -32,7 +32,8 @@ input_file="${datadir}/${accnum}"
 echo $input_file
 
 #names for all outputs
-report_k_file="${outdir}/kraken/${accnum}_kraken2_report.txt"               output_k_file="${outdir}/kraken/${accnum}_kraken2.txt"
+report_k_file="${outdir}/kraken/${accnum}_kraken2_report.txt"
+output_k_file="${outdir}/kraken/${accnum}_kraken2.txt"
 
 output_b_file="${outdir}/bracken/${accnum}_bracken.txt"
 report_b_file="${outdir}/bracken/${accnum}_bracken_report.txt"

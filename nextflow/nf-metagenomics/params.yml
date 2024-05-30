@@ -1,0 +1,6 @@
+project: "naiss2024-22-540"
+outdir: "/proj/applied_bioinformatics/users/x_libja/MedBioinfo/nextflow/nf-metagenomics/output_metagenomics"
+#input_read_pairs: "/proj/applied_bioinformatics/users/x_libja/MedBioinfo/data/sra_fastqc/*{1,2}.fastq.gz"
+input_read_pairs: "/proj/applied_bioinformatics/users/x_libja/MedBioinfo/data/sra_fastq/ERR6913168*{1,2}.fastq.gz"
+bowtie2_db: "/proj/applied_bioinformatics/users/x_libja/MedBioinfo/data/bowtie2_DBs/SARS-CoV-2_bowtie2_DB*"
+kraken2_db: "/proj/applied_bioinformatics/common_data/kraken_database"
